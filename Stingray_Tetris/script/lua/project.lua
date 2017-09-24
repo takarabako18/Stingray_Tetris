@@ -9,7 +9,8 @@ require 'script/lua/flow_callbacks'
 
 Project.level_names = {
 	menu = "content/levels/main_menu",
-	basic = "content/levels/basic"
+	basic = "content/levels/basic",
+	mainGame = "content/levels/main_game"
 }
 
 -- Can provide a config for the basic project, or it will use a default if not.
@@ -32,8 +33,26 @@ SimpleProject.config = {
 function Project.on_level_load_pre_flow()
 	-- Spawn the player for all non-menu levels. level_name will be nil if this 
 	-- is an unsaved Test Level.
+
+	
+	--ゲーム的にはマウス使わないのでマウスは自由に
+	stingray.Window.set_resizable(true)
+	stingray.Window.set_title("Stingray_Tetris")
+	stingray.Window.set_show_cursor(true)
+
 	local level_name = SimpleProject.level_name
-	if level_name == nil or level_name ~= Project.level_names.menu then
+
+	print(level_name)
+
+	if level_name == Project.level_names.mainGame then
+	    print("MainGame start")
+	    
+	    local MainGame = require 'script/lua/MainGame/MainGameManager'
+	    MainGame.Start(SimpleProject.level)
+	    
+	    
+	
+	elseif level_name == nil or level_name ~= Project.level_names.menu then
 		local view_position = Appkit.get_editor_view_position() or stingray.Vector3(0,-14,4)
 		local view_rotation = Appkit.get_editor_view_rotation() or stingray.Quaternion.identity()
 		local Player = require 'script/lua/player'

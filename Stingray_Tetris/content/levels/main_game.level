@@ -13,10 +13,124 @@ editor_metadata = {
 	]
 	Flow = {
 		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "be177293-aff8-4d37-acdc-7a57244e8b63"
+				ToItem = "Unit"
+				ToNode = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "c1230df2-a00c-49a2-a3a5-48d38872b624"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698"
+			}
 		]
 		Groups = [
 		]
 		Nodes = [
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Category = "Event"
+				Class = "Stingray.Foundation.Flow.DataDrivenFlowNode"
+				ColorCategory = ""
+				ExportTypeName = "level_loaded"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "c1230df2-a00c-49a2-a3a5-48d38872b624"
+				Inputs = [
+				]
+				NodeLocation = {
+					X = -156
+					Y = -31
+				}
+				Outputs = [
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Output"
+						RawName = "out"
+						Type = "event"
+						UIName = "Out"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutEvent"
+						}
+					}
+				]
+				Title = "Level Loaded"
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Category = "Data"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "be177293-aff8-4d37-acdc-7a57244e8b63"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = 60
+					Y = -120
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "949a00ea-3445-468f-a176-cb10ebc22944"
+				}
+				Title = "Level Unit"
+				Type = "core/units/camera"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Camera"
+						Type = "camera"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableCamera"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+				]
+				Brief = "Sets the active camera for the engine."
+				Category = "Camera"
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Set Active Camera"
+				NodeLocation = {
+					X = 257
+					Y = 8
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
 		]
 	}
 	Groups = [
@@ -325,6 +439,36 @@ editor_metadata = {
 		}
 		{
 			Cameras = {
+				camera = {
+					CameraInfo = {
+						FarRange = 1000
+						NearRange = 0.1
+						ProjectionType = "Perspective"
+						VerticalFov = 10
+					}
+					InterestPointDistance = 0
+					Name = "camera"
+					OrthographicPlane = {
+						W = 1
+						X = 0
+						Y = 0
+						Z = 1
+					}
+					OrthographicZoom = 10
+					Pos = {
+						X = 5
+						Y = -100
+						Z = 11
+					}
+					Rot = {
+						W = -1
+						X = 0
+						Y = 0
+						Z = 0
+					}
+					RotationSpeed = 0.003
+					TranslationSpeed = 0.05
+				}
 			}
 			Id = "949a00ea-3445-468f-a176-cb10ebc22944"
 			Layer = "Default"
@@ -342,7 +486,7 @@ editor_metadata = {
 			}
 			Pos = {
 				X = 5
-				Y = -20
+				Y = -100
 				Z = 11
 			}
 			Rot = {
@@ -359,6 +503,80 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "core/units/camera"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9b698fd9-1634-4046-939a-0a380113694d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "SimpleBlock"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.58494567871094
+				Y = -30.0497074127197
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Blocks/SimpleBlock"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fedd0f90-c032-4921-89de-9e401cdeb483"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "SimpleBlock1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 4.17026901245117
+				Y = -31.031551361084
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Blocks/SimpleBlock"
 		}
 	]
 	Volumes = [
@@ -377,6 +595,71 @@ entities = [
 entity_version = "0.2.0"
 flow = {
 	nodes = [
+		{
+			id = "c1230df2-a00c-49a2-a3a5-48d38872b624"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698:0"
+						node = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+		{
+			id = "be177293-aff8-4d37-acdc-7a57244e8b63"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "949a00ea-3445-468f-a176-cb10ebc22944"
+				}
+				unit = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698"
+			in_variables = {
+				Camera = {
+					type = "camera"
+				}
+				Unit = {
+					node = "be177293-aff8-4d37-acdc-7a57244e8b63"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			name = "Set Active Camera"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Camera = null
+				Unit = null
+			}
+			variables = [
+				{
+					name = "Camera"
+					type = "camera"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+			]
+		}
 	]
 }
 level_references = [
@@ -508,6 +791,19 @@ units = [
 	}
 	{
 		cameras = {
+			camera = {
+				far_range = 1000
+				interest_point_distance = 10
+				near_range = 0.1
+				orthographic_plane = [0 0 1 1]
+				orthographic_zoom = 10
+				position = [5 -100 11]
+				projection_type = "perspective"
+				rotation = [0 0 0 -1]
+				rotation_speed = 0.003
+				translation_speed = 0.05
+				vertical_fov = 10
+			}
 		}
 		data = {
 		}
@@ -518,10 +814,44 @@ units = [
 		materials = {
 		}
 		name = "camera"
-		pos = [5 -20 11]
+		pos = [5 -100 11]
 		rot = [0 0 0 -1]
 		scl = [1 1 1]
 		type = "core/units/camera"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9b698fd9-1634-4046-939a-0a380113694d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "SimpleBlock"
+		pos = [3.58494567871094 -30.0497074127197 0]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/Blocks/SimpleBlock"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fedd0f90-c032-4921-89de-9e401cdeb483"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "SimpleBlock1"
+		pos = [4.17026901245117 -31.031551361084 0]
+		rot = [0 0 0 -1]
+		scl = [1 1 1]
+		type = "content/models/Blocks/SimpleBlock"
 	}
 ]
 volumes = [

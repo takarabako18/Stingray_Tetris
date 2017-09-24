@@ -13,6 +13,9 @@ lua = [
 	"core/scaleform_studio/lua/*"
 	"script/lua/*"
 ]
+level = [
+	"content/levels/*"
+]
 material = [
 	"core/performance_hud/*"
 ]
