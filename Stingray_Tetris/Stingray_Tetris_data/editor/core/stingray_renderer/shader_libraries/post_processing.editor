@@ -1,0 +1,406 @@
+
+"#ID[95c1d22896941a76]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = 5
+			value = 1
+			type = "scalar"
+			name = "Scene Exposure"
+			min = 0
+			step = 0.0010000000000000002
+			variable = "exposure"
+		}
+	]
+	shader = "scene_combine"
+	defines = [
+		"APPLY_BLOOM"
+		"COLOR_GRADING"
+	]
+}
+"#ID[7f5f9b0d377d6c79]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = 5
+			value = 1
+			type = "scalar"
+			name = "Motion Blur Factor"
+			min = 0
+			step = 0.0010000000000000002
+			variable = "motion_blur_amount"
+		}
+	]
+	shader = "mb_neighbour_max"
+	defines = ""
+}
+"#ID[c5414fd4f0e90a1d]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "quantize_luma"
+	defines = ""
+}
+"#ID[60b8020f671ce4de]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "temporal_aa"
+	defines = [
+		"DEPTH_STABILIZE"
+	]
+}
+"#ID[061f07a42b333682]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "depth_of_field"
+	defines = [
+		"HORIZONTAL_PASS"
+	]
+}
+"#ID[952858f7d670ffe0]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "temporal_aa"
+	defines = ""
+}
+"#ID[82425cefe155f3df]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "mb_tile_max"
+	defines = [
+		"HORIZONTAL_PASS"
+	]
+}
+"#ID[9a9e8b4bf3b88272]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "adapt_exposure"
+	defines = ""
+}
+"#ID[42b778d9a67edc1b]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "temporal_aa"
+	defines = [
+		"CUBIC_INTERPOLATION"
+		"VIZUALIZE_TAA_CLAMP"
+	]
+}
+"#ID[56c7b7de26499899]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter"
+	defines = [
+		"DOWNSAMPLE_MIP"
+	]
+}
+"#ID[595617e1f5cff733]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter"
+	defines = [
+		"DOWNSAMPLE_2x2"
+	]
+}
+"#ID[cba8ff253d36eed6]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "merge_skydome_motion_vectors"
+	defines = ""
+}
+"#ID[f61e081b85f7c9b9]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "depth_of_field"
+	defines = [
+		"VISUALIZE"
+	]
+}
+"#ID[59c75728edeace8b]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "depth_fog"
+	defines = ""
+}
+"#ID[b9ba67f3cb3fdff2]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "selection_effect"
+	defines = [
+		"LENS_DISTORT"
+	]
+}
+"#ID[ce099bc4b838c029]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = 5
+			value = 1
+			type = "scalar"
+			name = "Scene Exposure"
+			min = 0
+			step = 0.0010000000000000002
+			variable = "exposure"
+		}
+	]
+	shader = "scene_combine"
+	defines = [
+		"COLOR_GRADING"
+	]
+}
+"#ID[7fce11f60a221157]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "temporal_aa_depth"
+	defines = ""
+}
+"#ID[b1b7376c7b938eb1]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "mb_tile_max"
+	defines = [
+		"VERTICAL_PASS"
+	]
+}
+"#ID[986413dcd233a5a6]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "compute_histogram"
+	defines = ""
+}
+"#ID[1a547c29142b3803]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "calculate_coc"
+	defines = ""
+}
+"#ID[e836fd743a9cef32]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "quantize_luma"
+	defines = [
+		"VR_MASK"
+	]
+}
+"#ID[a5d8722fc431c52d]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "depth_of_field"
+	defines = [
+		"ASCENDING_DIAGONAL_PASS"
+	]
+}
+"#ID[a51a9b052ab5593a]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "lens_effects"
+	defines = ""
+}
+"#ID[03930c76b11a6764]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter"
+	defines = [
+		"SEPARABLE_BILINEAR_GAUSSIAN_5TAP_Y"
+	]
+}
+"#ID[2354ef51d0720111]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "bilateral_upsample"
+	defines = ""
+}
+"#ID[c4b2a39e6e2b1c11]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "temporal_aa"
+	defines = [
+		"CUBIC_INTERPOLATION"
+		"VIZUALIZE_TAA_JITTER"
+	]
+}
+"#ID[eaaff13c6a1a5da9]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter"
+	defines = [
+		"SEPARABLE_BILINEAR_GAUSSIAN_5TAP_X"
+	]
+}
+"#ID[2ea36bbc852a187b]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = 5
+			value = 1
+			type = "scalar"
+			name = "Motion Blur Factor"
+			min = 0
+			step = 0.0010000000000000002
+			variable = "motion_blur_amount"
+		}
+	]
+	shader = "mb_bake_velocity_depth"
+	defines = ""
+}
+"#ID[7256d89ca505aebe]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "temporal_aa"
+	defines = [
+		"CUBIC_INTERPOLATION"
+	]
+}
+"#ID[60e7d68b9b06a034]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter"
+	defines = [
+		"DOWNSAMPLE_4x4"
+	]
+}
+"#ID[fc1ded3ce2e5e200]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "bright_pass"
+	defines = ""
+}
+"#ID[3da25f9c386c10f8]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = 5
+			value = 1
+			type = "scalar"
+			name = "Scene Exposure"
+			min = 0
+			step = 0.0010000000000000002
+			variable = "exposure"
+		}
+	]
+	shader = "scene_combine"
+	defines = ""
+}
+"#ID[82571a7f4bd05cf3]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "depth_of_field"
+	defines = [
+		"DESCENDING_DIAGONAL_PASS"
+	]
+}
+"#ID[408a3cc9c0561ed5]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = 5
+			value = 1
+			type = "scalar"
+			name = "Scene Exposure"
+			min = 0
+			step = 0.0010000000000000002
+			variable = "exposure"
+		}
+	]
+	shader = "scene_combine"
+	defines = [
+		"APPLY_BLOOM"
+	]
+}
+"#ID[7be6dfc7dbadde8f]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "mb_reconstruct_filter_blur"
+	defines = ""
+}
+"#ID[b319173aef7d4088]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "blend_bloom"
+	defines = [
+	]
+}
+"#ID[17a991b2ddb766bb]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "temporal_aa"
+	defines = [
+		"CUBIC_INTERPOLATION"
+		"VIZUALIZE_TAA_HISTORY_DIFF"
+	]
+}
+"#ID[ef088c9e6bd36e78]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "selection_effect"
+	defines = ""
+}

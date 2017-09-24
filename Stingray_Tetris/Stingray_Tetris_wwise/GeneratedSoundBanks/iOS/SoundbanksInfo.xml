@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="11" SoundbankVersion="118">
+	<RootPaths>
+		<ProjectRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\</ProjectRoot>
+		<SourceFilesRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\.cache\iOS\</SourceFilesRoot>
+		<SoundBanksRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\iOS\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\iOS</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="782826392" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\default</ObjectPath>
+			<ShortName>default</ShortName>
+			<Path>default.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1577926306" Name="sfx_spawn_sound" ObjectPath="\Events\Default Work Unit\SFX\sfx_spawn_sound" DurationType="OneShot" DurationMin="2.767347" DurationMax="2.767347"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="704244969" Language="SFX">
+					<ShortName>sfx_spawn_sound.wav</ShortName>
+					<Path>SFX\sfx_spawn_sound_E843A46D.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

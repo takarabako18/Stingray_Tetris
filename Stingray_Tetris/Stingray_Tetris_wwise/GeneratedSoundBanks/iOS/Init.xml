@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="11" SoundbankVersion="118">
+	<RootPaths>
+		<ProjectRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\</ProjectRoot>
+		<SourceFilesRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\.cache\iOS\</SourceFilesRoot>
+		<SoundBanksRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\iOS\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\iOS</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

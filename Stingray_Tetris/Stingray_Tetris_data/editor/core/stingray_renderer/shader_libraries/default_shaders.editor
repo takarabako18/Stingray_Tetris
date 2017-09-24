@@ -1,0 +1,151 @@
+
+"#ID[d32fb5caaebe093d]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			type = "resource"
+			name = "Diffuse Map"
+			variable = "diffuse_map"
+		}
+	]
+	shader = "gui"
+	defines = [
+		"DEPTH_TEST_ENABLED"
+		"DIFFUSE_MAP"
+	]
+}
+"#ID[9d63acbf4ca51e3f]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			type = "resource"
+			name = "Diffuse Map"
+			variable = "diffuse_map"
+		}
+	]
+	shader = "gui"
+	defines = "DEPTH_TEST_ENABLED DIFFUSE_MAP MEDIAN_BIT_ALPHA EDGE_AA"
+}
+"#ID[dd5541cf52ab122d]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "missing_shader"
+	defines = ""
+}
+"#ID[7db5ab01bf054abd]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "line_object"
+	defines = [
+		"DEPTH_TEST_DISABLED"
+	]
+}
+"#ID[0c1080a518f8b1bc]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "line_object"
+	defines = [
+		""
+	]
+}
+"#ID[9fcfe12666dbf9a2]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gui"
+	defines = ""
+}
+"#ID[009fc71abce17928]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gui"
+	defines = [
+		""
+	]
+}
+"#ID[8a99d66935036bbb]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			type = "resource"
+			name = "Diffuse Map"
+			variable = "diffuse_map"
+		}
+	]
+	shader = "gui"
+	defines = [
+		"DIFFUSE_MAP"
+	]
+}
+"#ID[79885208c1b1d0d4]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gui"
+	defines = [
+		"DEPTH_TEST_ENABLED"
+	]
+}
+"#ID[746a5ab0c09dcfd7]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			type = "resource"
+			name = "Diffuse Map"
+			variable = "diffuse_map"
+		}
+	]
+	shader = "gui"
+	defines = [
+		"DEPTH_TEST_ENABLED"
+		"DIFFUSE_MAP"
+		"ONE_BIT_ALPHA"
+	]
+}
+"#ID[dc6740c8da950050]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			type = "resource"
+			name = "Diffuse Map"
+			variable = "diffuse_map"
+		}
+	]
+	shader = "gui"
+	defines = [
+		"DIFFUSE_MAP"
+		"ONE_BIT_ALPHA"
+	]
+}
+"#ID[c994c1908404b947]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			type = "resource"
+			name = "Diffuse Map"
+			variable = "diffuse_map"
+		}
+	]
+	shader = "gui"
+	defines = [
+		"DEPTH_TEST_ENABLED"
+		"DIFFUSE_MAP"
+		"MEDIAN_BIT_ALPHA"
+	]
+}

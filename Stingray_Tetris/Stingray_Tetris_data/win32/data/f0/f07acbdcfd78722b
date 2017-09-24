@@ -1,0 +1,12 @@
+
+render_settings = {
+}
+autoload = true
+boot_package = "core/stingray_renderer/lookup_tables/generator/generate_luts"
+wwise = {
+	communication = {
+		enabled = false
+	}
+}
+boot_script = "core/stingray_renderer/lookup_tables/generator/generate_luts"
+render_config = "core/stingray_renderer/lookup_tables/generator/generate_luts"

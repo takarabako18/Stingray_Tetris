@@ -1,0 +1,100 @@
+
+error_levels = {
+	missing_material = "warning"
+	missing_resources = {
+		flow = {
+			fallback_resource = "core/fallback_resources/missing_flow"
+		}
+		unit = {
+			fallback_resource = "core/fallback_resources/missing_unit"
+		}
+		shader = {
+			fallback_resource = "missing_shader"
+		}
+		texture = {
+			fallback_resource = "core/fallback_resources/missing_texture"
+		}
+		material = {
+			fallback_resource = "core/fallback_resources/missing_material"
+		}
+	}
+	fallback_resource_package = "core/fallback_resources/fallback_resources"
+	semantic_mismatch = "warning"
+}
+performance_hud = "core/performance_hud/performance_hud"
+libraries = {
+	wwise = {
+		root_folder = "../basic_wwise"
+		project_file = "basic_wwise.wproj"
+	}
+}
+win32 = {
+	render_settings = {
+	}
+	floating_point_exceptions = true
+	window_name = "Stingray Basic Project"
+	renderer = {
+		fullscreen_output = 0
+		fullscreen = false
+		screen_resolution = [
+			1280
+			720
+		]
+		d3d_debug = false
+		adapter_index = 0
+		aspect_ratio = -1
+	}
+}
+boot_package = "boot"
+wwise = {
+	data_dir = "content/audio"
+	enabled = true
+}
+boot_script = "core/appkit/lua/main"
+physx = {
+	apex_cloth = false
+	apex_cloth_lod_unit_cost = 1.0000000000000001e-05
+	apex_lod_resource_budget = 3
+}
+stingray_version = "1.9.0.0"
+data_compiler = {
+	resource_overrides = [
+		{
+			platforms = [
+				"win32"
+			]
+			suffix = ".win32"
+		}
+		{
+			platforms = [
+				"ps4"
+			]
+			suffix = ".ps4"
+		}
+		{
+			platforms = [
+				"xb1"
+			]
+			suffix = ".xb1"
+		}
+		{
+			platforms = [
+				"ios"
+			]
+			suffix = ".ios"
+		}
+		{
+			platforms = [
+				"android"
+			]
+			suffix = ".android"
+		}
+		{
+			platforms = [
+				"web"
+			]
+			suffix = ".web"
+		}
+	]
+}
+render_config = "core/stingray_renderer/renderer"

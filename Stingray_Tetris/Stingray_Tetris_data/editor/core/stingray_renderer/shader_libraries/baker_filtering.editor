@@ -1,0 +1,41 @@
+
+"#ID[7ffbbe97cf795d22]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "lightmap_edge_dilate"
+	defines = ""
+}
+"#ID[e0700c1ff797ec8d]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "baker_copy_material_component"
+	defines = ""
+}
+"#ID[3b19ef6589f320e0]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "lightmap_filter"
+	defines = ""
+}
+"#ID[a1172776458aa313]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "lightmap_average"
+	defines = ""
+}
+"#ID[af7d0b149dbd3e2c]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "baker_material_downsample"
+	defines = ""
+}

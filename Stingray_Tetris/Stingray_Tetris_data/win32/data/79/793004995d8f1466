@@ -1,0 +1,50 @@
+
+autoload = true
+error_levels = {
+	missing_material = "warning"
+	missing_resources = {
+		unit = {
+			fallback_resource = "core/fallback_resources/missing_unit"
+		}
+		shader = {
+			fallback_resource = "missing_shader"
+		}
+		texture = {
+			fallback_resource = "core/fallback_resources/missing_texture"
+		}
+		material = {
+			fallback_resource = "core/fallback_resources/missing_material"
+		}
+	}
+	fallback_resource_package = "core/fallback_resources/fallback_resources"
+	semantic_mismatch = "warning"
+}
+win32 = {
+	render_settings = {
+		vr_supported = false
+		ar_supported = false
+		selection_enabled = true
+	}
+	user_settings = ""
+	renderer = {
+		fullscreen_output = 0
+		fullscreen = false
+		disable_implicit_sli = false
+		screen_resolution = [
+			256
+			256
+		]
+		d3d_debug = false
+		adapter_index = 0
+		aspect_ratio = -1
+	}
+}
+wwise = {
+	communication = {
+		enabled = false
+	}
+}
+boot_script = "core/editor_slave/unit_editor/boot"
+steam = {
+	enabled = false
+}

@@ -1,0 +1,65 @@
+
+"#ID[9a0296d5f802d599]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssao_ao_pass"
+	defines = [
+		"AO_LOW_QUALITY"
+	]
+}
+"#ID[687c0783bdd54b59]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssao_mip_pass"
+	defines = [
+		"AO_HALF_RES"
+	]
+}
+"#ID[37706b63371ad932]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssao_ao_pass"
+	defines = ""
+}
+"#ID[80e71cabd981ce33]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssao_mip_pass"
+	defines = ""
+}
+"#ID[0dd81b667ae76cf0]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssao_ao_pass"
+	defines = [
+		"AO_HIGH_QUALITY"
+	]
+}
+"#ID[39173fa955db1b07]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssao_depth_copy_pass"
+	defines = ""
+}
+"#ID[3c80c627f6ed886b]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssao_ao_pass"
+	defines = [
+		"AO_MID_QUALITY"
+	]
+}

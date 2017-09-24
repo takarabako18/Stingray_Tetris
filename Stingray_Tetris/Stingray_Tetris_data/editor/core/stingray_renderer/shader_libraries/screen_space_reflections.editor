@@ -1,0 +1,66 @@
+
+"#ID[e99e431325a20e8f]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssr_hiz_pass"
+	defines = ""
+}
+"#ID[010e0568fb402503]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssr_ray_march_pass"
+	defines = [
+		"ONE_RPP"
+	]
+}
+"#ID[c865f651b3079a3e]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssr_ray_march_pass"
+	defines = [
+		"VR_MASK"
+	]
+}
+"#ID[4b873ece509ba27c]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssr_ray_march_pass"
+	defines = [
+		"VR_MASK"
+		"ONE_RPP"
+	]
+}
+"#ID[a7695cc653966d30]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssr_ray_march_pass"
+	defines = ""
+}
+"#ID[4c0a27ca6eb12006]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssr_noisy_upsample"
+	defines = ""
+}
+"#ID[2e58664342da13b0]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "ssr_hiz_pass"
+	defines = [
+		"LEVEL_0"
+	]
+}

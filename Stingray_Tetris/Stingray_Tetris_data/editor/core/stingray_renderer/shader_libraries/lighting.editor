@@ -1,0 +1,181 @@
+
+"#ID[dbfc86072724ced7]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "sun_shadow_mask"
+	defines = [
+		"FILL"
+	]
+}
+"#ID[c96f0ce80329ddd9]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "light_source"
+	defines = [
+		"BOX"
+	]
+}
+"#ID[80ea84dc94b7bce8]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = [
+		"SUN"
+		"SSR_ENABLED"
+		"CLUSTERED_SHADING"
+	]
+}
+"#ID[a002d9c1718af7fe]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = ""
+}
+"#ID[3318d30ba209b183]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = [
+		"SUN"
+		"SSR_ENABLED"
+	]
+}
+"#ID[07897d11a9a0eebd]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "sun_shadow_mask"
+	defines = ""
+}
+"#ID[d34067eb2c39af93]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "light_source"
+	defines = [
+		"OMNI"
+		"SHADOW_MAPPING"
+	]
+}
+"#ID[9abda3002a6a0517]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = [
+		"SUN"
+		"CLUSTERED_SHADING"
+	]
+}
+"#ID[54c8c9ce40a9e1e1]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "linearize_depth"
+	defines = ""
+}
+"#ID[2817f28456b5ac21]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = [
+		"CLUSTERED_SHADING"
+	]
+}
+"#ID[c9c26adcb6e96c69]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "light_source"
+	defines = [
+		"SPOT"
+	]
+}
+"#ID[1e7778818ab35abe]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "light_source"
+	defines = [
+		"SPOT"
+		"SHADOW_MAPPING"
+	]
+}
+"#ID[88db74bb23d444a7]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = [
+		"SSR_ENABLED"
+		"CLUSTERED_SHADING"
+	]
+}
+"#ID[e2e91bc2ab110dc5]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "light_source"
+	defines = [
+		"BOX"
+		"SHADOW_MAPPING"
+	]
+}
+"#ID[b4aa97fa058da013]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = [
+		"SUN"
+	]
+}
+"#ID[4c1933af56f80f2c]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "light_source"
+	defines = [
+		"OMNI"
+	]
+}
+"#ID[2c3f6f07e777605c]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "global_lighting"
+	defines = [
+		"SSR_ENABLED"
+	]
+}
+"#ID[cf346110085bb4c9]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "sun_shadow_cutter"
+	defines = ""
+}

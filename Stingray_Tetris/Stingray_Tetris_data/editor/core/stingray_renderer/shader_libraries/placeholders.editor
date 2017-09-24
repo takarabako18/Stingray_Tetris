@@ -1,0 +1,133 @@
+
+"#ID[babf855a542739e4]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = [
+				1
+				1
+				1
+			]
+			value = [
+				0.5
+				0.5
+				0.5
+			]
+			type = "vector3"
+			name = "Diffuse RGB"
+			min = [
+				0
+				0
+				0
+			]
+			step = [
+				0.0010000000000000002
+				0.0010000000000000002
+				0.0010000000000000002
+			]
+			variable = "diffuse_rgb"
+		}
+	]
+	shader = "base"
+	defines = "DIFFUSE_MAP"
+}
+"#ID[708cf7702d33150e]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = [
+				1
+				1
+				1
+			]
+			value = [
+				0.5
+				0.5
+				0.5
+			]
+			type = "vector3"
+			name = "Diffuse RGB"
+			min = [
+				0
+				0
+				0
+			]
+			step = [
+				0.0010000000000000002
+				0.0010000000000000002
+				0.0010000000000000002
+			]
+			variable = "diffuse_rgb"
+		}
+	]
+	shader = "base"
+	defines = ""
+}
+"#ID[e4ed3d5e49cf83b6]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = [
+				1
+				1
+				1
+			]
+			value = [
+				0.5
+				0.5
+				0.5
+			]
+			type = "vector3"
+			name = "Diffuse RGB"
+			min = [
+				0
+				0
+				0
+			]
+			step = [
+				0.0010000000000000002
+				0.0010000000000000002
+				0.0010000000000000002
+			]
+			variable = "diffuse_rgb"
+		}
+	]
+	shader = "base"
+	defines = "VC_COMPRESSED VC_TINT_RGB"
+}
+"#ID[d0036635993570cb]" = {
+	semantics = [
+	]
+	variables = [
+		{
+			max = [
+				1
+				1
+				1
+			]
+			value = [
+				0.5
+				0.5
+				0.5
+			]
+			type = "vector3"
+			name = "Diffuse RGB"
+			min = [
+				0
+				0
+				0
+			]
+			step = [
+				0.0010000000000000002
+				0.0010000000000000002
+				0.0010000000000000002
+			]
+			variable = "diffuse_rgb"
+		}
+	]
+	shader = "base"
+	defines = "DOUBLE_SIDED"
+}

@@ -1,0 +1,75 @@
+
+"#ID[3e1a983f43aae7c5]" = {
+	semantics = [
+		{
+			max = [
+				10
+				10
+			]
+			value = [
+				0.10000000000000001
+				0.10000000000000001
+			]
+			type = "vector2"
+			set = 7
+			name = "Size"
+			min = [
+				0
+				0
+			]
+			semantic_name = "TEXCOORD"
+			step = [
+				0.010000000000000002
+				0.010000000000000002
+			]
+		}
+		{
+			max = [
+				10
+				10
+			]
+			value = [
+				0.10000000000000001
+				0.10000000000000001
+			]
+			type = "vector2"
+			set = 7
+			name = "Size"
+			min = [
+				0
+				0
+			]
+			semantic_name = "TEXCOORD"
+			step = [
+				0.010000000000000002
+				0.010000000000000002
+			]
+		}
+		{
+			max = [
+				10
+				10
+			]
+			value = [
+				0.10000000000000001
+				0.10000000000000001
+			]
+			type = "vector2"
+			set = 7
+			name = "Size"
+			min = [
+				0
+				0
+			]
+			semantic_name = "TEXCOORD"
+			step = [
+				0.010000000000000002
+				0.010000000000000002
+			]
+		}
+	]
+	variables = [
+	]
+	shader = "billboard"
+	defines = ""
+}

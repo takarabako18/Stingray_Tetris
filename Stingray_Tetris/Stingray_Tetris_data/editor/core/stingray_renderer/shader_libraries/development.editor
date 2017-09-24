@@ -1,0 +1,290 @@
+
+"#ID[6c3775fe6c96f22e]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter_cubemap"
+	defines = [
+		"RADIANCE"
+	]
+}
+"#ID[8cb744492b18ccec]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = [
+		"DEPTH_SAMPLER"
+	]
+}
+"#ID[bedd5a64b097599d]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"ROUGHNESS_VISUALIZATION"
+	]
+}
+"#ID[4d95a5f30855d44f]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"SSAO_VISUALIZATION"
+	]
+}
+"#ID[6b7e893c309532ad]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"DENSITY_VISUALIZATION"
+	]
+}
+"#ID[1a3332064b76fef8]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"ALBEDO_VISUALIZATION"
+	]
+}
+"#ID[69df504a9a608830]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = [
+		"ALPHA_TO_RGB"
+	]
+}
+"#ID[503a14293bf26451]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"NORMAL_VISUALIZATION"
+	]
+}
+"#ID[deff37e06040f071]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"SUN_SHADOW_VISUALIZATION"
+	]
+}
+"#ID[7096b56b7c65e99d]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy_depth"
+	defines = ""
+}
+"#ID[b14f3ac57f5cc3ed]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"RECONSTRUCTED_NORMAL_VISUALIZATION"
+	]
+}
+"#ID[c2ed43e6cfc011b2]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = [
+		"FLIP_Y"
+	]
+}
+"#ID[d996b7bdf040ea8b]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = ""
+}
+"#ID[02253369d7a8fe77]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"AO_VISUALIZATION"
+	]
+}
+"#ID[e32cdb78d85bd1ca]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"VELOCITY_VISUALIZATION"
+	]
+}
+"#ID[0eaf6cdb9db8a9d8]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "brdf_lut"
+	defines = ""
+}
+"#ID[5f0f15532203cd14]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"METALLIC_VISUALIZATION"
+	]
+}
+"#ID[d788f05279a9cb29]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = [
+		"POINT_SAMPLER"
+	]
+}
+"#ID[7d215cedee11bd67]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = [
+		"CUBE_CAPTURE"
+	]
+}
+"#ID[daa387d642c0ce03]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter_cubemap"
+	defines = [
+		"DIFFUSE"
+	]
+}
+"#ID[036072a2b276f12c]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = [
+		"ENCODE_RGBM"
+	]
+}
+"#ID[91cfcd06c82956f7]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "display_histogram"
+	defines = ""
+}
+"#ID[9ac19b8fc8303367]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"SPECULAR_VISUALIZATION"
+	]
+}
+"#ID[c9d892ffec0747d6]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = ""
+}
+"#ID[415b2e213bef7d73]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"FILL_UNTOUCHED_PIXELS"
+	]
+}
+"#ID[693d9745af37d52a]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"AMBIENT_DIFFUSE_VISUALIZATION"
+	]
+}
+"#ID[5f51ec115f3819a9]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "gbuffer_debug"
+	defines = [
+		"MATERIAL_AO_VISUALIZATION"
+	]
+}
+"#ID[fe6df43f23b3bd16]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "copy"
+	defines = [
+		"CUBE_CAPTURE"
+		"ENCODE_RGBM"
+	]
+}
+"#ID[3966cb523a8ae057]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "filter_cubemap"
+	defines = [
+		"SPECULAR"
+	]
+}
+"#ID[cae4d3cb459cb393]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "visualize_stable_depth"
+	defines = ""
+}

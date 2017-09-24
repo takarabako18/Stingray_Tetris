@@ -1,0 +1,29 @@
+
+"#ID[a6fb4bc90b7068dd]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "path_tracing"
+	defines = [
+		"LIGHTMAP"
+	]
+}
+"#ID[a9ea17178564305e]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "bake_compute"
+	defines = ""
+}
+"#ID[a7ff68f2b8594a3e]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "path_tracing"
+	defines = [
+		"DEBUG_MATERIALS"
+	]
+}

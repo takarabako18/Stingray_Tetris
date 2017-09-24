@@ -1,0 +1,38 @@
+
+"#ID[2126498fab713379]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "vr_blit"
+	defines = [
+		"MONO"
+		"VR_MASK"
+	]
+}
+"#ID[3873c35dbe450297]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "vr_blit"
+	defines = [
+		"MONO"
+	]
+}
+"#ID[00f22a38d25992c4]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "vr_blit"
+	defines = ""
+}
+"#ID[0189548eba9ebcc2]" = {
+	semantics = [
+	]
+	variables = [
+	]
+	shader = "vr_mask"
+	defines = ""
+}

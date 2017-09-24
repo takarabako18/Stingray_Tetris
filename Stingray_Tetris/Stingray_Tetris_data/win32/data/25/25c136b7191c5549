@@ -1,0 +1,33 @@
+
+autoload = true
+error_levels = {
+	missing_material = "warning"
+	missing_resources = {
+		unit = {
+			fallback_resource = "core/fallback_resources/missing_unit"
+		}
+		shader = {
+			fallback_resource = "missing_shader"
+		}
+		texture = {
+			fallback_resource = "core/fallback_resources/missing_texture"
+		}
+		material = {
+			fallback_resource = "core/fallback_resources/missing_material"
+		}
+	}
+	fallback_resource_package = "core/fallback_resources/fallback_resources"
+	semantic_mismatch = "warning"
+}
+win32 = {
+	user_settings = ""
+}
+wwise = {
+	communication = {
+		enabled = false
+	}
+}
+boot_script = "core/editor_slave/timpani_player/timpani_player"
+steam = {
+	enabled = false
+}
