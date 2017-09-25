@@ -29,6 +29,22 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "c84e0b46-cddd-43a3-ad49-b9ed2c9d0698"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "1857022d-cdbd-4529-8df7-5d9457c5e7c7"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "be177293-aff8-4d37-acdc-7a57244e8b63"
+				ToItem = "Unit"
+				ToNode = "1857022d-cdbd-4529-8df7-5d9457c5e7c7"
+				Type = "Unit"
+			}
 		]
 		Groups = [
 		]
@@ -129,6 +145,76 @@ editor_metadata = {
 				]
 				ReturnValues = [
 				]
+				Width = 160
+			}
+			{
+				Brief = "Sets the camera’s vertical FOV."
+				Category = "Camera"
+				Class = "Stingray.Foundation.Flow.DataDrivenFlowNode"
+				ColorCategory = ""
+				ExportTypeName = "set_camera_vertical_fov"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "1857022d-cdbd-4529-8df7-5d9457c5e7c7"
+				Inputs = [
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Input"
+						Hidden = false
+						RawName = "unit"
+						Type = "unit"
+						UIName = "Unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Input"
+						Hidden = false
+						RawName = "camera"
+						Type = "camera"
+						UIName = "Camera"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableCamera"
+						}
+					}
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Input"
+						Hidden = false
+						RawName = "angle"
+						Type = "float"
+						UIName = "Angle"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+							Value = 0.28
+						}
+					}
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Input"
+						Hidden = false
+						RawName = "in"
+						Type = "event"
+						UIName = "In"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InEvent"
+						}
+					}
+				]
+				NodeLocation = {
+					X = 600
+					Y = -100
+				}
+				Outputs = [
+					{
+						Class = "Stingray.Foundation.Flow.DataDrivenFlowNode+Output"
+						RawName = "out"
+						Type = "event"
+						UIName = "Out"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutEvent"
+						}
+					}
+				]
+				Title = "Set Camera Vertical FOV"
 				Width = 160
 			}
 		]
@@ -487,7 +573,7 @@ editor_metadata = {
 			Pos = {
 				X = 5
 				Y = -100
-				Z = 11
+				Z = 12
 			}
 			Rot = {
 				W = -1
@@ -507,13 +593,14 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "9b698fd9-1634-4046-939a-0a380113694d"
+			Id = "c37c3820-cdab-4da8-9a94-a4a5da26f711"
 			Layer = "Default"
 			Lights = {
 			}
 			Materials = {
+				material = "content/models/Blocks/StingrayPBS1"
 			}
-			Name = "SimpleBlock"
+			Name = "plane_primitive"
 			OverridePoses = {
 			}
 			Pivot = {
@@ -522,61 +609,27 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 3.58494567871094
-				Y = -30.0497074127197
-				Z = 0
+				X = 5
+				Y = 1
+				Z = 10
 			}
 			Rot = {
-				W = -1
-				X = 0
+				W = 0.707106781186548
+				X = 0.707106781186547
 				Y = 0
 				Z = 0
 			}
 			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
+				X = 10
+				Y = 20
+				Z = 20
 			}
 			ScriptData = {
+				"light_baking.enabled" = false
+				"light_baking.Plane_Primitive.bake_target" = false
+				"light_baking.Plane_Primitive.contributes" = false
 			}
-			Type = "content/models/Blocks/SimpleBlock"
-		}
-		{
-			Cameras = {
-			}
-			Id = "fedd0f90-c032-4921-89de-9e401cdeb483"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "SimpleBlock1"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 4.17026901245117
-				Y = -31.031551361084
-				Z = 0
-			}
-			Rot = {
-				W = -1
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/Blocks/SimpleBlock"
+			Type = "core/units/primitives/plane_primitive"
 		}
 	]
 	Volumes = [
@@ -641,6 +694,15 @@ flow = {
 				}
 			}
 			name = "Set Active Camera"
+			out_events = {
+				Out = [
+					{
+						event = 0
+						id = "1857022d-cdbd-4529-8df7-5d9457c5e7c7:0"
+						node = "1857022d-cdbd-4529-8df7-5d9457c5e7c7"
+					}
+				]
+			}
 			query = false
 			return_values = [
 			]
@@ -659,6 +721,28 @@ flow = {
 					type = "unit"
 				}
 			]
+		}
+		{
+			id = "1857022d-cdbd-4529-8df7-5d9457c5e7c7"
+			in_variables = {
+				angle = {
+					type = "float"
+				}
+				camera = {
+					type = "camera"
+				}
+				unit = {
+					node = "be177293-aff8-4d37-acdc-7a57244e8b63"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			type = "set_camera_vertical_fov"
+			variable_values = {
+				angle = 0.28
+				camera = null
+				unit = null
+			}
 		}
 	]
 }
@@ -814,7 +898,7 @@ units = [
 		materials = {
 		}
 		name = "camera"
-		pos = [5 -100 11]
+		pos = [5 -100 12]
 		rot = [0 0 0 -1]
 		scl = [1 1 1]
 		type = "core/units/camera"
@@ -823,35 +907,22 @@ units = [
 		cameras = {
 		}
 		data = {
+			"light_baking.enabled" = false
+			"light_baking.Plane_Primitive.bake_target" = false
+			"light_baking.Plane_Primitive.contributes" = false
 		}
-		id = "9b698fd9-1634-4046-939a-0a380113694d"
+		id = "c37c3820-cdab-4da8-9a94-a4a5da26f711"
 		lights = {
 		}
 		material = ""
 		materials = {
+			material = "content/models/Blocks/StingrayPBS1"
 		}
-		name = "SimpleBlock"
-		pos = [3.58494567871094 -30.0497074127197 0]
-		rot = [0 0 0 -1]
-		scl = [1 1 1]
-		type = "content/models/Blocks/SimpleBlock"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
-		id = "fedd0f90-c032-4921-89de-9e401cdeb483"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "SimpleBlock1"
-		pos = [4.17026901245117 -31.031551361084 0]
-		rot = [0 0 0 -1]
-		scl = [1 1 1]
-		type = "content/models/Blocks/SimpleBlock"
+		name = "plane_primitive"
+		pos = [5 1 10]
+		rot = [0.707106781186547 0 0 0.707106781186548]
+		scl = [10 20 20]
+		type = "core/units/primitives/plane_primitive"
 	}
 ]
 volumes = [

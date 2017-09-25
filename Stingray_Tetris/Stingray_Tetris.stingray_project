@@ -37,7 +37,7 @@ data_compiler = {
 	]
 }
 data_directory = "../Stingray_Tetris_data"
-default_startup_level = "content/levels/basic"
+default_startup_level = "content/levels/main_game"
 description = "stingray_tetris"
 libraries = {
 	wwise = {

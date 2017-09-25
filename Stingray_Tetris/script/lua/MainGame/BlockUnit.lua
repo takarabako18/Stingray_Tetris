@@ -57,23 +57,27 @@ blockUnit.new = function()
         -- マテリアル取得
         material = stingray.Mesh.material(mesh, 1)
 
+
         -- color = stingray.Quaternion.from_elements(255, 127, 0, 255)
         -- stingray.Material.set_vector4(material, "base_color", color)
     end
 
     obj.SetVisible = function(index)
-        Unit.set_unit_visibility(unit, true)
+        
         if colorIndex ~= index then
+            Unit.set_unit_visibility(unit, true)
             colorIndex = index
             --カラー変更
-            c_data = color_Block[index]
-            color = stingray.Quaternion.from_elements(c_data[1], c_data[2], c_data[3],255)
+
+            local c_data = color_Block[index]
+            local color = stingray.Quaternion.from_elements(c_data[1], c_data[2], c_data[3],1)
             stingray.Material.set_vector4(material, "base_color", color)
         end
     end
 
     obj.SetInvisible = function()
         Unit.set_unit_visibility(unit, false)
+        colorIndex = 0
     end
 
     return obj
