@@ -31,10 +31,10 @@ color_Block = {
     {0, 1, 1}, -- T水色
     {1, 0, 1}, -- S紫
     {0, 1, 0}, -- Z緑
-    {0, .5, 1}, -- J青
-    {1, .5, 0}, -- Lオレンジ
+    {0, 0, 1}, -- J青
+    {1, 0.3, 0}, -- Lオレンジ
     {1, 1, 0}, -- O黄
-    {1, 0, 0} -- I赤
+    {0.8, 0, 0} -- I赤
 }
 
 
@@ -70,8 +70,10 @@ blockUnit.new = function()
             --カラー変更
 
             local c_data = color_Block[index]
-            local color = stingray.Quaternion.from_elements(c_data[1], c_data[2], c_data[3],1)
-            stingray.Material.set_vector4(material, "base_color", color)
+            -- local color = stingray.Quaternion.from_elements(c_data[1], c_data[2], c_data[3],1)
+            local color = stingray.Vector3(c_data[1], c_data[2], c_data[3])
+            print(color)
+            stingray.Material.set_vector3(material, "base_color", color)
         end
     end
 

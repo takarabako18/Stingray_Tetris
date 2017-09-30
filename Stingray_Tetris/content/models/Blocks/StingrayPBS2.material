@@ -612,7 +612,7 @@ shader = {
 			content_size = [160 0]
 			export = {
 				material_variable = {
-					display_name = "base_color"
+					display_name = "Base Color"
 					name = "base_color"
 					type = "float3"
 					ui = {
@@ -631,7 +631,7 @@ shader = {
 			position = [700 -240]
 			samplers = {
 			}
-			title = "base_color"
+			title = "Base Color"
 			type = "core/shader_nodes/material_variable"
 		}
 		{
@@ -1046,11 +1046,11 @@ textures = {
 variables = {
 	base_color = {
 		type = "vector3"
-		value = [1 0.31 0]
+		value = [0 0 0]
 	}
 	emissive = {
 		type = "vector3"
-		value = [1 1 1]
+		value = [0 0 0]
 	}
 	emissive_intensity = {
 		type = "scalar"

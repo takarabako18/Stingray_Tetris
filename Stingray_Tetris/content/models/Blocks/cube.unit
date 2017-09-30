@@ -1,0 +1,16 @@
+
+materials = {
+	phong2 = "content/models/Blocks/phong2"
+}
+renderables = {
+	pCube2 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

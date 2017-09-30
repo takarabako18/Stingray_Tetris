@@ -110,8 +110,8 @@ NextView.new = function()
     local blockFactory = require "script/lua/MainGame/BlockUnit"
 
     for i = 1, 3 do
-        local nextPlusX = 1 + i * 4
-        local nextPlusZ = 26
+        local nextPlusX = -3 + i * 4
+        local nextPlusZ = 25
 
         Next = {}
         for z = 1, 4 do
@@ -128,7 +128,7 @@ NextView.new = function()
 
     -- ホールド
     obj.holdBlockView = {}
-    local holdPlusX = 0
+    local holdPlusX = -2
     local holdPlusZ = 25
     for z = 1, 4 do
         --VIewとモデルをわける

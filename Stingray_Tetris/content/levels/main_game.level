@@ -8,6 +8,22 @@ editor_metadata = {
 				"$resource_type" = "entity"
 			}
 			layer = "Default"
+			modified_components = {
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					fog_enabled = false
+				}
+				"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
+					global_diffuse_map = {
+						"$resource_name" = "core/stingray_renderer/environments/midday/diffuse_cube"
+						"$resource_type" = "texture"
+					}
+					skydome_intensity = 1
+					skydome_map = {
+						"$resource_name" = "core/stingray_renderer/environments/midday/skydome"
+						"$resource_type" = "texture"
+					}
+				}
+			}
 			name = "Default Shading Environment"
 		}
 	]
@@ -361,10 +377,10 @@ editor_metadata = {
 				Z = 5
 			}
 			Rot = {
-				W = 0.5
-				X = -0.707106781186547
-				Y = -2.77555756156289E-17
-				Z = 0.5
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
 			}
 			Scl = {
 				X = 1
@@ -598,7 +614,7 @@ editor_metadata = {
 			Lights = {
 			}
 			Materials = {
-				material = "content/models/Blocks/StingrayPBS1"
+				material = "content/models/Blocks/phong2"
 			}
 			Name = "plane_primitive"
 			OverridePoses = {
@@ -631,6 +647,47 @@ editor_metadata = {
 			}
 			Type = "core/units/primitives/plane_primitive"
 		}
+		{
+			Cameras = {
+			}
+			Id = "8de2e491-857c-417d-afe9-89f9d8ec1da3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+				material = "content/models/Blocks/phong2"
+			}
+			Name = "plane_primitive1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 8
+				Y = 1
+				Z = 22
+			}
+			Rot = {
+				W = -0.70710676908493
+				X = -0.70710676908493
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 18
+				Y = 4
+				Z = 5
+			}
+			ScriptData = {
+				"light_baking.enabled" = false
+				"light_baking.Plane_Primitive.bake_target" = false
+				"light_baking.Plane_Primitive.contributes" = false
+			}
+			Type = "core/units/primitives/plane_primitive"
+		}
 	]
 	Volumes = [
 	]
@@ -641,6 +698,22 @@ entities = [
 		inherit = {
 			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
 			"$resource_type" = "entity"
+		}
+		modified_components = {
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				fog_enabled = false
+			}
+			"3eb1ba63-3a53-4846-970b-57e3d4d75d2b" = {
+				global_diffuse_map = {
+					"$resource_name" = "core/stingray_renderer/environments/midday/diffuse_cube"
+					"$resource_type" = "texture"
+				}
+				skydome_intensity = 1
+				skydome_map = {
+					"$resource_name" = "core/stingray_renderer/environments/midday/skydome"
+					"$resource_type" = "texture"
+				}
+			}
 		}
 		name = "Default Shading Environment"
 	}
@@ -801,7 +874,7 @@ units = [
 		}
 		name = "Sun Light"
 		pos = [0 0 5]
-		rot = [-0.707106781186547 -2.77555756156289E-17 0.5 0.5]
+		rot = [0 0 0 1]
 		scl = [1 1 1]
 		type = "core/units/light_source"
 	}
@@ -916,12 +989,33 @@ units = [
 		}
 		material = ""
 		materials = {
-			material = "content/models/Blocks/StingrayPBS1"
+			material = "content/models/Blocks/phong2"
 		}
 		name = "plane_primitive"
 		pos = [5 1 10]
 		rot = [0.707106781186547 0 0 0.707106781186548]
 		scl = [10 20 20]
+		type = "core/units/primitives/plane_primitive"
+	}
+	{
+		cameras = {
+		}
+		data = {
+			"light_baking.enabled" = false
+			"light_baking.Plane_Primitive.bake_target" = false
+			"light_baking.Plane_Primitive.contributes" = false
+		}
+		id = "8de2e491-857c-417d-afe9-89f9d8ec1da3"
+		lights = {
+		}
+		material = ""
+		materials = {
+			material = "content/models/Blocks/phong2"
+		}
+		name = "plane_primitive1"
+		pos = [8 1 22]
+		rot = [-0.70710676908493 0 0 -0.70710676908493]
+		scl = [18 4 5]
 		type = "core/units/primitives/plane_primitive"
 	}
 ]

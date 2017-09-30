@@ -3,37 +3,25 @@ editor_metadata = {
 	camera_settings = {
 		far_range = 1000
 		interest_point_distance = 2.25986736416197
-		orthographic_plane = [
-			0
-			0
-			1
-			0
-		]
+		orthographic_plane = [0 0 1 0]
 		orthographic_zoom = 10
-		position = [
-			1.30473506450653
-			1.30473554134369
-			1.30473518371582
-		]
+		position = [1.30473506450653 1.30473554134369 1.30473518371582]
 		projection_type = "perspective"
-		rotation = [
-			-0.115916900336742
-			-0.279848128557205
-			0.880476236343384
-			0.364705175161362
-		]
+		rotation = [-0.115916900336742 -0.279848128557205 0.880476236343384 0.364705175161362]
 		rotation_speed = 0.003
 		translation_speed = 0.05
 	}
 }
 materials = {
 	StingrayPBS1 = "content/models/Blocks/StingrayPBS1"
+	StingrayPBS2 = "content/models/Blocks/StingrayPBS2"
 }
 renderables = {
 	pCube1 = {
 		always_keep = false
 		culling = "bounding_volume"
 		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
