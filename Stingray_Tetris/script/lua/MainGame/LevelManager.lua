@@ -11,6 +11,11 @@ LevelManager.fallDistance = 1
 -- 接着時間
 LevelManager.glueFrame = 30
 
+-- 固定時間後次のブロックが出るまでのフレーム
+LevelManager.nextWait = 30
+-- 上のやつからラインが削除されたときのフレーム（演出時間を含めるということ）
+LevelManager.nextWaitWithRemove = 30
+
 --入力による落下を行ったか
 local isInputFall = false
 local fallCountFrame = 0
@@ -21,7 +26,7 @@ function LevelManager.countUpFallFrame()
         fallCountFrame = fallCountFrame + 1
         glueFrame = 0
 
-        if  fallCountFrame >= LevelManager.fallFrame then
+        if fallCountFrame >= LevelManager.fallFrame then
             fallCountFrame = 0
             return true
         else
@@ -58,6 +63,26 @@ function LevelManager.countUpLevel()
     LevelManager.level = LevelManager.level + 1
 
     --何かすぷれっどシート化ＪＳＯＮ呼んで管理したい
+end
+
+local waitNextPopFrame = 0
+local waitFrame = 0
+function LevelManager.setWaitFrame(deleted)
+    if deleted then
+        waitNextPopFrame = LevelManager.nextWait
+    else
+        waitNextPopFrame = LevelManager.nextWaitWithRemove
+    end
+    waitFrame = 0
+end
+
+function LevelManager.countupWaitFrame()
+    waitFrame = waitFrame + 1
+    if waitNextPopFrame < waitFrame then
+        return true
+    else
+        return false
+    end
 end
 
 return LevelManager

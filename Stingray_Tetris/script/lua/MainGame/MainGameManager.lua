@@ -48,19 +48,20 @@ local function updateAreaView()
         end
     end
 
-    local shape = fallenBlock.block
-
-    for z, var1 in ipairs(shape) do
-        for x, var2 in ipairs(var1) do
-            -- 0はこぴーしない
-            if var2 > 0 then
-                local z2 = fallenBlock.z + z - 1
-                local x2 = fallenBlock.x + x - 1
-                if z2 > 20 or z2 < 1 then
-                elseif x > 10 or x < 1 then
-                else
-                    if AreaModel[z2][x2] == 0 then
-                        AreaModel[z2][x2] = var2
+    if fallenBlock ~= nil then
+        local shape = fallenBlock.block
+        for z, var1 in ipairs(shape) do
+            for x, var2 in ipairs(var1) do
+                -- 0はこぴーしない
+                if var2 > 0 then
+                    local z2 = fallenBlock.z + z - 1
+                    local x2 = fallenBlock.x + x - 1
+                    if z2 > 20 or z2 < 1 then
+                    elseif x > 10 or x < 1 then
+                    else
+                        if AreaModel[z2][x2] == 0 then
+                            AreaModel[z2][x2] = var2
+                        end
                     end
                 end
             end
@@ -107,6 +108,7 @@ local function tryDeleteLine()
         local l = {unpack(emptyLine)}
         table.insert(AreaLockModel, 1, l)
     end
+    return deleted
 end
 
 --指定したブロックがう埋まっていないかチェックする
@@ -169,20 +171,28 @@ end
 local function changePlayingState(state)
     playingState = state
     if state == PlayingStateEnum.Falling then
+        fallenBlock = nil
         --ブロックのぽっぷ
-
         spwanBlock()
     elseif state == PlayingStateEnum.Locked then
+        fallenBlock = nil
         -- 落ちるブロックの破棄とライン削除判定
         for z, var1 in ipairs(AreaModel) do
             for x, var2 in ipairs(var1) do
                 AreaLockModel[z][x] = var2
             end
         end
-        fallenBlock = nil
-        tryDeleteLine()
-        changePlayingState(PlayingStateEnum.Falling)
+
+        local deleted = tryDeleteLine()
+        if deleted then
+            changePlayingState(PlayingStateEnum.DeleteLine)
+        else
+            changePlayingState(PlayingStateEnum.WaitNextPop)
+        end
+
+        LevelManager.setWaitFrame(deleted)
     elseif state == PlayingStateEnum.DeleteLine then
+        --演出
     elseif state == PlayingStateEnum.WaitNextPop then
     -- 次のブロック落ちるまで待ち
     end
@@ -237,7 +247,6 @@ local function tryRotationWithSuperRotation(xMove, zMove, b)
 end
 
 local function waitFall()
-
     -- 下入力でソフトドロップ（そのフレームで強制落下）
     if input.pressedDown() or input.pressedUp() then
         LevelManager.inputFall()
@@ -246,7 +255,6 @@ local function waitFall()
     -- 落下フレームをカウントアップ
     -- 上下入力してたら確実にtrueが返ってくる
     fall = LevelManager.countUpFallFrame()
-
 
     local fallDistance = LevelManager.fallDistance
     if input.pressedUp() then
@@ -391,9 +399,6 @@ end
 --落下中～固定までのupdate
 -- ブロックが生成されたフレームでも行う
 local function fallingUpdate()
-    --ボタンの状態をしゅとくする
-    input.update(dt)
-
     -- 入力によってホールドいf
     if input.pressSquare() and NextAndHold.getCanHold() then
         holdBlockSpawn()
@@ -426,8 +431,6 @@ function MainGame.Start(level)
         RowModel = nil or {}
         LockRowMOdel = nil or {}
         for x = 1, 10 do
-            --local land_unit = World.spawn_unit(world, "content/models/Block/SimpleBlock")
-            -- Unit.set_local_position(land_unit, 1, view_position)
             local view_position = Vector3(x - .5, 0, 20.5 - z)
             local unit = blockFactory.Create(view_position)
             table.insert(RowView, unit)
@@ -478,15 +481,23 @@ local function lockedUpdate()
 end
 
 local function PlayingUpdate(self, dt)
+    --ボタンの状態をしゅとくする
+    input.update(dt)
     -- げーむのじょうたいでかんすうを変更する
     if playingState == PlayingStateEnum.Falling then
-        fallingUpdate()
         --フレームの最後にview更新
-        updateAreaView()
+        fallingUpdate()
     elseif playingState == PlayingStateEnum.Locked then
     elseif playingState == PlayingStateEnum.DeleteLine then
+        if LevelManager.countupWaitFrame() then
+            changePlayingState(PlayingStateEnum.Falling)
+        end
     elseif playingState == PlayingStateEnum.WaitNextPop then
+        if LevelManager.countupWaitFrame() then
+            changePlayingState(PlayingStateEnum.Falling)
+        end
     end
+    updateAreaView()
 end
 
 function MainGame.update(self, dt)

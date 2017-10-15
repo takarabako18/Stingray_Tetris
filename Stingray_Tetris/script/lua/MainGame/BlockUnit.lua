@@ -70,9 +70,7 @@ blockUnit.new = function()
             --カラー変更
 
             local c_data = color_Block[index]
-            -- local color = stingray.Quaternion.from_elements(c_data[1], c_data[2], c_data[3],1)
             local color = stingray.Vector3(c_data[1], c_data[2], c_data[3])
-            print(color)
             stingray.Material.set_vector3(material, "base_color", color)
         end
     end
