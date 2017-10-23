@@ -6,10 +6,10 @@ LevelManager.level = 1
 --一回ずれるまでのフレーム数
 LevelManager.fallFrame = 1
 -- 一回ずれる距離
-LevelManager.fallDistance = 1
+LevelManager.fallDistance = 20
 
 -- 接着時間
-LevelManager.glueFrame = 30
+LevelManager.glueFrame = 80
 
 -- 固定時間後次のブロックが出るまでのフレーム
 LevelManager.nextWait = 30

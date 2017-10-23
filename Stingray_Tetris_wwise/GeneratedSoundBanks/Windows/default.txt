@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1577926306	sfx_spawn_sound			\Default Work Unit\SFX\sfx_spawn_sound	
+	3739512484	Play_Music001			\Default Work Unit\MUSIC\Play_Music001	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	704244969	sfx_spawn_sound	F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\.cache\Windows\SFX\sfx_spawn_sound_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\sfx_spawn_sound		33980
+	229314446	BGM015-061226-blockochitekita-wav	C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\.cache\Windows\SFX\BGM015-061226-blockochitekita-wav_EE79F7FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\BGM015-061226-blockochitekita-wav		665991
+	704244969	sfx_spawn_sound	C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\.cache\Windows\SFX\sfx_spawn_sound_E843A46D.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\sfx_spawn_sound		33980
 

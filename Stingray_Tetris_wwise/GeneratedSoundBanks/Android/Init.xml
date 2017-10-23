@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\</ProjectRoot>
-		<SourceFilesRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\.cache\Android\</SourceFilesRoot>
-		<SoundBanksRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\GeneratedSoundBanks\Android\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX">

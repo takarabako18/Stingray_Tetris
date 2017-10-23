@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\</ProjectRoot>
-		<SourceFilesRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\projects\stingray\git_t-livee\stingray-templates\basic_wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,9 +16,14 @@
 			<ShortName>default</ShortName>
 			<Path>default.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3739512484" Name="Play_Music001" ObjectPath="\Events\Default Work Unit\MUSIC\Play_Music001" DurationType="Infinite"/>
 				<Event Id="1577926306" Name="sfx_spawn_sound" ObjectPath="\Events\Default Work Unit\SFX\sfx_spawn_sound" DurationType="OneShot" DurationMin="2.767347" DurationMax="2.767347"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="229314446" Language="SFX">
+					<ShortName>BGM015-061226-blockochitekita-wav.wav</ShortName>
+					<Path>SFX\BGM015-061226-blockochitekita-wav_EE79F7FB.wem</Path>
+				</File>
 				<File Id="704244969" Language="SFX">
 					<ShortName>sfx_spawn_sound.wav</ShortName>
 					<Path>SFX\sfx_spawn_sound_E843A46D.wem</Path>

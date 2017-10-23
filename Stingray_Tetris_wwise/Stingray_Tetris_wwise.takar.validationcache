@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="72">
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="64186491" DateHigh="30624660"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Attenuations\Default Work Unit.wwu" DateLow="205047007" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Audio Devices\Default Work Unit.wwu" DateLow="205057032" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="205067061" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Conversion Settings\Default Work Unit.wwu" DateLow="205077085" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="205087114" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="205097139" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Effects\Default Work Unit.wwu" DateLow="205117283" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Effects\Factory Effects.wwu" DateLow="205139922" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Events\Default Work Unit.wwu" DateLow="2010504459" DateHigh="30624659"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Game Parameters\Default Work Unit.wwu" DateLow="205170033" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="205586140" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="205596263" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="205616236" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Modulators\Default Work Unit.wwu" DateLow="205641708" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Presets\Default Work Unit.wwu" DateLow="206379631" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Queries\Default Work Unit.wwu" DateLow="206389660" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Queries\Factory Queries.wwu" DateLow="206399685" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\SoundBanks\Default Work Unit.wwu" DateLow="206414724" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="206424774" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\States\Default Work Unit.wwu" DateLow="206434799" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Stingray_Tetris_wwise.takar.wsettings" DateLow="73136808" DateHigh="30624660"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Stingray_Tetris_wwise.wproj" DateLow="206464892" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Switches\Default Work Unit.wwu" DateLow="206493854" DateHigh="30619173"/>
+	<ValidationCacheItem File="C:\Users\takar\Desktop\Projects\Stingray\Stingray_Tetris\Stingray_Tetris_wwise\Triggers\Default Work Unit.wwu" DateLow="206508897" DateHigh="30619173"/>
+</ValidationCache>

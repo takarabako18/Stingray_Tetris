@@ -19,7 +19,21 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{B83884E8-4D1A-4BC6-AA1E-7F006C86ADF8}" ShortID="449022605"/>
-				<Folder Name="MUSIC" ID="{79D39842-2F27-4F5C-9E19-B167662AD176}" ShortID="746143139"/>
+				<Folder Name="MUSIC" ID="{79D39842-2F27-4F5C-9E19-B167662AD176}" ShortID="746143139">
+					<ChildrenList>
+						<Event Name="Play_Music001" ID="{FFC63502-4D7C-4B22-96DF-0931490B9B94}">
+							<ChildrenList>
+								<Action Name="Play" ID="{81BB7F84-B0D2-4D94-A0A8-0F39564C965C}" ShortID="271154928" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{5151B55D-625A-4618-B02C-394B175CB50B}" Global="false">
+											<ObjectRef Name="BGM015-061226-blockochitekita-wav" ID="{75B440F6-B76D-4B34-913F-B6B79A41B76D}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

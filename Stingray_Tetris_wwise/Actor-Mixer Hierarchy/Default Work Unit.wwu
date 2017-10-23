@@ -69,6 +69,35 @@
 							<ObjectRef Name="MUSIC" ID="{FD57498F-FB4D-4C36-B47F-573B05BF493A}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="BGM015-061226-blockochitekita-wav" ID="{75B440F6-B76D-4B34-913F-B6B79A41B76D}" ShortID="555227763" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6EDC07D3-C6A4-4D1E-9997-56DC00BFC167}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FD1EAC6C-40DC-4A41-88DE-02C58B0A0D76}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BGM015-061226-blockochitekita-wav" ID="{2AD66324-2AD7-450E-A5A1-C5FE083D1FF6}" ShortID="229314446">
+									<Language>SFX</Language>
+									<AudioFile>BGM015-061226-blockochitekita-wav.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BGM015-061226-blockochitekita-wav" ID="{2AD66324-2AD7-450E-A5A1-C5FE083D1FF6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

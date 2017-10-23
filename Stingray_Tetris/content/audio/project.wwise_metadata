@@ -4,6 +4,7 @@ aux_buses = [
 banks = {
 	default = {
 		events = [
+			"Play_Music001"
 			"sfx_spawn_sound"
 		]
 	}
@@ -20,6 +21,13 @@ buses = [
 	"VO"
 ]
 events = {
+	Play_Music001 = {
+		attenuation_max = 0
+		duration_max = 0
+		duration_min = 0
+		duration_type = "Infinite"
+		positioning = "2D"
+	}
 	sfx_spawn_sound = {
 		attenuation_max = 0
 		duration_max = 2.767347

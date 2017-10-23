@@ -1,4 +1,5 @@
 
 events = [
+	"Play_Music001"
 	"sfx_spawn_sound"
 ]

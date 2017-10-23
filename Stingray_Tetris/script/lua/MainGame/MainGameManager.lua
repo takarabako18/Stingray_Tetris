@@ -32,6 +32,8 @@ local input = {}
 local NextAndHold = {}
 -- レベルとか管理
 local LevelManager = {}
+-- 音管理
+local SoundManager ={}
 
 local emptyLine = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 
@@ -149,6 +151,8 @@ local function spwanBlock()
     end
     fallenBlock.setInitialPosition()
 
+
+
     local shape = fallenBlock.block
     for z, var1 in ipairs(shape) do
         for x, var2 in ipairs(var1) do
@@ -163,6 +167,10 @@ local function spwanBlock()
             end
         end
     end
+
+    --こうかおん
+    SoundManager.play_spawn_sound()
+
 
     -- 一回落下フレーム挟む
     updateAreaView()
@@ -451,6 +459,9 @@ function MainGame.Start(level)
     -- レベル,落下フレームの管理
     LevelManager = require "script/lua/MainGame/LevelManager"
 
+    --音
+    SoundManager = require "script/lua/Sound/SoundManager"
+    SoundManager.play_Game_Music()
     -- にゅうりょくの準備
     input = require "script/lua/MainGame/InputData"
     input.Start(SimpleProject.level)

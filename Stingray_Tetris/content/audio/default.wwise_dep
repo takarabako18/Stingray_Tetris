@@ -7,9 +7,6 @@ android = {
 	streams = [
 	]
 }
-banks = [
-	"content/audio/default"
-]
 ios = {
 	banks = [
 		"content/audio/default"
@@ -18,7 +15,6 @@ ios = {
 	streams = [
 	]
 }
-metadata = "content/audio/project"
 ps4 = {
 	banks = [
 		"content/audio/default"
@@ -27,8 +23,6 @@ ps4 = {
 	streams = [
 	]
 }
-streams = [
-]
 win32 = {
 	banks = [
 		"content/audio/default"
