@@ -22,6 +22,8 @@ local gameState = GameStateEnum.Playing
 local PlayingStateEnum = Enum:new {"Falling", "Locked", "DeleteLine", "WaitNextPop"}
 local playingState = PlayingStateEnum.Falling
 
+local gameUI = require 'script/lua/MainGame/UI'
+
 -- らっかちゅうブロック
 local fallenBlock = {}
 
@@ -469,6 +471,9 @@ function MainGame.Start(level)
     -- next hold
     NextAndHold = require "script/lua/MainGame/NextAndHold"
     NextAndHold.Start()
+
+
+    gameUI:init()
 
     spwanBlock()
 

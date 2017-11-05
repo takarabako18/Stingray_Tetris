@@ -40,3 +40,8 @@ ADD_PACKAGES = [
 	"gwnav/boot.package"
 	"core/animation/boot.package"
 ]
+
+
+s2d = [
+    "content/ui/main_game"
+]
