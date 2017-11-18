@@ -55,16 +55,16 @@
 		<Banks>
 			<Language ID="0">
 				<File Name="Init" Hash="3050053962" Timestamp="131530487802851954"/>
-				<File Name="default" Hash="2901063895" Timestamp="131531911083815115"/>
+				<File Name="default" Hash="3423763132" Timestamp="131548904511609476"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="0">
 				<File Name="Init" Hash="946922749" Timestamp="131530487802967263"/>
-				<File Name="default" Hash="3644780978" Timestamp="131531911083915364"/>
+				<File Name="default" Hash="3644780978" Timestamp="131548904511779683"/>
 			</Language>
 			<Language ID="-1">
-				<File Name="" Hash="1943098875" Timestamp="131531911083910346"/>
+				<File Name="" Hash="1943098875" Timestamp="131548904511764622"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -103,6 +103,7 @@ function MainMenu.update(object, dt)
 		MainMenu.debug_menu:update()
 	end
 
+	--UI上のボタンが押されなかったらプラットフォーム別のボタンイベントをとって進むか閉じるかする
 	if MainMenu.action == nil  then
 		local time = stingray.World.time(SimpleProject.world)
 		local p = stingray.Application.platform()

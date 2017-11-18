@@ -73,9 +73,14 @@
 						<Sound Name="BGM015-061226-blockochitekita-wav" ID="{75B440F6-B76D-4B34-913F-B6B79A41B76D}" ShortID="555227763" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>51</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

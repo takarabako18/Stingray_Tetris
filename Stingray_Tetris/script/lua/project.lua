@@ -45,7 +45,6 @@ function Project.on_level_load_pre_flow()
 	print(level_name)
 
 	if level_name == Project.level_names.mainGame then
-	    print("MainGame start")
 	    
 	    local MainGame = require 'script/lua/MainGame/MainGameManager'
 	    MainGame.Start(SimpleProject.level)

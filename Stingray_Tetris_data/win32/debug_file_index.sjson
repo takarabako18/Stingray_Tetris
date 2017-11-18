@@ -241,6 +241,7 @@
 "data/65/650a3df3c70461bb" = "core/editor_slave/stingray_editor/group.lua"
 "data/65/65f53eb3ad252f61" = "core/editor_slave/stingray_editor/move_tool.lua"
 "data/66/6602e06633bc31ca" = "core/stingray_renderer/proxy_geometry/light_proxies.unit"
+"data/66/660caa8d4a86d0a7" = "script/lua/UIUtility/Text.lua"
 "data/66/66650ef8d50b9cba" = "gbuffer_debug:density_visualization.shader_library"
 "data/66/66d47d0bf225be5c" = "gwnav/lua/runtime/navrequires.lua"
 "data/67/6766e7ae8ab82fa6" = "content/audio/default.wwise_bank"

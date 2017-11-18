@@ -2,14 +2,19 @@ Project.LevelManager = Appkit.class(Project.LevelManager)
 local LevelManager = Project.LevelManager -- cache off for readability and speed
 
 LevelManager.level = 1
+function LevelManager.getLevel()
+    return LevelManager.level
+end
 
 --一回ずれるまでのフレーム数
-LevelManager.fallFrame = 1
+LevelManager.fallFrame = 0
+--削除ライン数
+LevelManager.deleteLine = 0
 -- 一回ずれる距離
-LevelManager.fallDistance = 20
+LevelManager.fallDistance = 5
 
 -- 接着時間
-LevelManager.glueFrame = 80
+LevelManager.glueFrame = 40
 
 -- 固定時間後次のブロックが出るまでのフレーム
 LevelManager.nextWait = 30
@@ -63,6 +68,13 @@ function LevelManager.countUpLevel()
     LevelManager.level = LevelManager.level + 1
 
     --何かすぷれっどシート化ＪＳＯＮ呼んで管理したい
+end
+
+function LevelManager.DeleteLine(lineCnt)
+
+    LevelManager.deleteLine = LevelManager.deleteLine + lineCnt
+    LevelManager.level = LevelManager.level + lineCnt
+
 end
 
 local waitNextPopFrame = 0

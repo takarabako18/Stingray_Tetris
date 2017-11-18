@@ -112,6 +112,10 @@ local function tryDeleteLine()
         local l = {unpack(emptyLine)}
         table.insert(AreaLockModel, 1, l)
     end
+
+    LevelManager.DeleteLine(lineCount)
+    gameUI.updateDeleteData(LevelManager.level, LevelManager.deleteLine)
+
     return deleted
 end
 
@@ -138,6 +142,8 @@ end
 
 -- 通常のブロックを生成
 local function spwanBlock()
+
+
     -- IHSをチェック、ホールドを行う
     if input.pressingSquare() then
         fallenBlock = NextAndHold.initalHold()
@@ -153,7 +159,9 @@ local function spwanBlock()
     end
     fallenBlock.setInitialPosition()
 
-
+    --UI
+    LevelManager.countUpLevel()
+    gameUI.updateLevelData(LevelManager.level)
 
     local shape = fallenBlock.block
     for z, var1 in ipairs(shape) do

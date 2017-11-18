@@ -7,4 +7,14 @@ nodes = [
 		function = "ProjectFlowCallbacks.example"
 		category = "Project"
 	}
+
+	{
+	    name = "Update FPS"
+	    args = {
+	        FPS = "string"
+	    }
+	    function = "ui.UpdateFPS"
+	    category = "UIUtility"
+	    
+	}
 ]

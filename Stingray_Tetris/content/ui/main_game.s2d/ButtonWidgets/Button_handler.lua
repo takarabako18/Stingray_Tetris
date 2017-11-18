@@ -28,7 +28,7 @@ local handler = {
                       data = {} }
         scaleform.Stage.dispatch_event(evt)
         
-
+        
     end
 
     -- Invoked when the button state changes
