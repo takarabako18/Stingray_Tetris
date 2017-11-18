@@ -94,9 +94,9 @@ local shapes = {
         },
         {
             {0, 0, 0, 0},
-            {0, 0, 4, 0},
-            {0, 0, 4, 0},
-            {0, 4, 4, 0}
+            {0, 4, 4, 0},
+            {0, 4, 0, 0},
+            {0, 4, 0, 0}
         },
         {
             {0, 0, 0, 0},
@@ -105,10 +105,11 @@ local shapes = {
             {0, 0, 4, 0}
         },
         {
+            
             {0, 0, 0, 0},
-            {0, 4, 4, 0},
-            {0, 4, 0, 0},
-            {0, 4, 0, 0}
+            {0, 0, 4, 0},
+            {0, 0, 4, 0},
+            {0, 4, 4, 0}
         }
     },
     --L
@@ -213,35 +214,37 @@ blockclass.new = function(index)
 
     -- 時計まわりに回転
     Block.rotateclockWise = function(self)
-        Block.rotate = Block.rotate - 1
-        if Block.rotate == 0 then
-            Block.rotate = 4
-        end
-        Block.block = shapes[Block.blockIndex][Block.rotate]
-    end
-    -- 時計回りに回転後のブロック情報を返す
-    Block.getclockWiseShape = function(self)
-        local r = Block.rotate - 1
-        if r == 0 then
-            r = 4
-        end
-        return shapes[Block.blockIndex][r]
-    end
-
-    -- 反時計まわりに回転
-    Block.rotateReverse = function(self)
+        
         Block.rotate = Block.rotate + 1
         if Block.rotate == 5 then
             Block.rotate = 1
         end
         Block.block = shapes[Block.blockIndex][Block.rotate]
     end
-
-    -- 反時計回りに回転後のブロック情報を返す
-    Block.getcReverseShape = function(self)
+    -- 時計回りに回転後のブロック情報を返す
+    Block.getclockWiseShape = function(self)
         local r = Block.rotate + 1
         if r == 5 then
             r = 1
+        end
+        return shapes[Block.blockIndex][r]
+    end
+
+    -- 反時計まわりに回転
+    Block.rotateReverse = function(self)
+        Block.rotate = Block.rotate - 1
+        if Block.rotate == 0 then
+            Block.rotate = 4
+        end
+        Block.block = shapes[Block.blockIndex][Block.rotate]
+    end
+
+    -- 反時計回りに回転後のブロック情報を返す
+    Block.getcReverseShape = function(self)
+        
+        local r = Block.rotate - 1
+        if r == 0 then
+            r = 4
         end
         return shapes[Block.blockIndex][r]
     end

@@ -333,9 +333,9 @@ local function rotateAndMoveBlock()
 
     -- ボタンの入力確認 同時押しなら〇ボタンゆうせん
     if input.pressCircle() then
-        reverseWise = true
-    elseif input.pressCross() then
         clockWise = true
+    elseif input.pressCross() then
+        reverseWise = true
     end
 
     --fallenBlock
